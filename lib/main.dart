@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter 企业站实战',
       //自定义主题
       theme: ThemeData(
-        primaryColor: Colors.redAccent,
+        primaryColor: Colors.blue,
       ),
 
       //添加路由

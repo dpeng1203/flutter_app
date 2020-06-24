@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'pages/about_us_page.dart';
+import 'pages/my_page.dart';
 import 'pages/home_page.dart';
-import 'pages/news_page.dart';
-import 'pages/product_page.dart';
+import 'pages/search_page.dart';
+import 'pages/travel_page.dart';
 
 class App extends StatefulWidget {
   @override
@@ -26,9 +26,9 @@ class AppState extends State<App> {
         controller: _controller,
         children: [
           HomePage(),
-          ProductPage(),
-          NewsPage(),
-          AboutUsPage()
+          TravelPage(),
+          SearchPage(),
+          MyPage()
         ],
         onPageChanged: (index){
           this.setState(() {
@@ -54,16 +54,16 @@ class AppState extends State<App> {
             icon: Icon(Icons.home),
           ),
           BottomNavigationBarItem(
-            title: Text('产品'),
-            icon: Icon(Icons.apps),
+            title: Text('旅拍'),
+            icon: Icon(Icons.camera_alt),
           ),
           BottomNavigationBarItem(
-            title: Text('新闻'),
-            icon: Icon(Icons.fiber_new),
+            title: Text('搜索'),
+            icon: Icon(Icons.search),
           ),
           BottomNavigationBarItem(
-            title: Text('关于我们'),
-            icon: Icon(Icons.insert_comment),
+            title: Text('我的'),
+            icon: Icon(Icons.account_circle),
           ),
         ],
       ),
